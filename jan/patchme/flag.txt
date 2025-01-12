@@ -1,0 +1,7 @@
+
+## Flag for this challenge 
+
+picoCTF{p47ch1ng_l1f3_h4ck_c4a4688b}
+
+
+this would only need to add the if ( user_pw == ...) to the input once you enter this new single string without space. you should get the string after xor cipher 
