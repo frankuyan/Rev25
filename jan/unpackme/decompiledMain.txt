@@ -1,0 +1,40 @@
+
+
+
+undefined8 main(void)
+
+{
+  long in_FS_OFFSET;
+  int iStack_44;
+  undefined8 uStack_40;
+  undefined8 uStack_38;
+  undefined8 uStack_30;
+  undefined8 uStack_28;
+  undefined4 uStack_20;
+  undefined2 uStack_1c;
+  long lStack_10;
+  
+  lStack_10 = *(long *)(in_FS_OFFSET + 0x28);
+  uStack_38 = 0x4c75257240343a41;
+  uStack_30 = 0x30623e306b6d4146;
+  uStack_28 = 0x3532666630486637;
+  uStack_20 = 0x36665f60;
+  uStack_1c = 0x4e;
+  printf(&UNK_004b3004);
+  __isoc99_scanf(&UNK_004b3020,&iStack_44);
+  if (iStack_44 == 0xb83cb) {
+    uStack_40 = rotate_encrypt(0,&uStack_38);
+    fputs(uStack_40,stdout);
+    putchar(10);
+    free(uStack_40);
+  }
+  else {
+    puts(&UNK_004b3023);
+  }
+  if (lStack_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return 0;
+}
+
